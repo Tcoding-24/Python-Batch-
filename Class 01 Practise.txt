@@ -1,0 +1,42 @@
+num1 = 10
+num2 =  20
+num3 = 30
+num4 = 40
+num5 = 50
+#These all are variables
+
+_num  = 10
+_num  = 20
+_num  = 30
+_num4 = 40
+_num5 = 50
+#underscore can be used in variables
+
+ManuS_vaji = 90
+foodPanda = 30
+ketoVAI = 40
+heBaJaBa= 50
+#variable can be easily wirtten in any words we can express
+""" Always we should create variables which are meaningful"""
+
+num = 2
+JamesBond = 700
+Meow = 6
+
+#In first rows numbers cannot be written in variables
+
+I_Like_Bangladesh = 1000
+print (I_Like_Bangladesh)
+
+ALuVajiVlo= "NAA"
+print (ALuVajiVlo)
+#variable can be string and numerical numbers both
+DalvAjiVlo= "Hea"
+print (DalvAjiVlo)
+
+'''Lets be proffetional'''
+vilg_ppl1 = 400
+town_ppl2 = 700
+sum = vilg_ppl1+town_ppl2
+print(sum)
+#Total country people sum 1100
