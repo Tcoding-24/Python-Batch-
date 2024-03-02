@@ -1,0 +1,67 @@
+class NIDManager:
+  def __init__(self):
+    self.nid_numbers = []
+
+  def add_nid(self):
+    new_nid = input("Enter the new NID number: ")
+    self.nid_numbers.append(new_nid)
+    print("NID number added successfully!")
+
+  def display_nids(self):
+    print("List of all NID numbers:")
+    for nid in self.nid_numbers:
+      print(nid)
+
+  def delete_nid(self):
+    nid_to_delete = input("Enter the NID number to delete: ")
+    if nid_to_delete in self.nid_numbers:
+      self.nid_numbers.remove(nid_to_delete)
+      print("NID number deleted successfully!")
+    else:
+      print("NID number not found!")
+
+  def update_nid(self):
+    old_nid = input("Enter the current NID number: ")
+    if old_nid in self.nid_numbers:
+      index = self.nid_numbers.index(old_nid)
+      new_nid = input("Enter the new NID number: ")
+      self.nid_numbers[index] = new_nid
+      print("NID number updated successfully!")
+    else:
+      print("NID number not found!")
+
+  def menu(self):
+    while True:
+      print("\nNID Number Management System")
+      print("[1] Add NID Number")
+      print("[2] Display NID Numbers")
+      print("[3] Delete NID Number")
+      print("[4] Update NID Number")
+      print("[5] Exit")
+
+      choice = input("Enter your choice (1-5): ")
+
+      if choice == '1':
+        self.add_nid()
+      elif choice == '2':
+        self.display_nids()
+      elif choice == '3':
+        self.delete_nid()
+      elif choice == '4':
+        self.update_nid()
+      elif choice == '5':
+        print("Exiting the program...")
+        break
+      else:
+        print("Invalid choice. Please enter a valid option (1-5).")
+
+
+# Main program
+def main():
+  manager = NIDManager()
+  manager.menu()
+
+
+if __name__ == "__main__":
+  main()
+
